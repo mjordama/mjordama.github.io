@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <style>.search {
+            
+        text-align: center;
+        font-family: Arial;
+            margin: 100px;
+            padding: 20px;
+        }
+        .results > div {
+            padding: 2px;
+            background-color: #e5e5e5;
+            font-family: Arial;
+            border: 1px solid grey;
+            margin: 10px;
+            display: none
+        }</style>
+<body>
+<body>
+    <header>
+        
+        <div class="navbar">
+  <a href="index.html">Inici</a>
+  <a href="./sobre.html">Sobre</a>
+   <a href="./cercador.html">Cercador</a>          
+
+  <div class="dropdown">
+    <button class="dropbtn">Categories
+      <i class="fa fa-caret-down"></i>
+    </button>
+      
+    <div class="dropdown-content">
+       <a href="page2-1.html">1. Biblioteques Digitals i Bases de Dades Literàries</a>
+      <a href="page2-2.html">2. Correctors i Eines d'Edició</a>
+      <a href="page2-3.html">3. Literatura i Cultura Catalana</a>
+        <a href="page2-4.html">4. Projectes de Digitalització i Preservació</a>
+        <a href="page2-5.html">5. Recursos Educatius i d'Aprenentatge</a>
+        <a href="page2-6.html">6. Recursos lingüístics i gramàtics</a>
+        <a href="page2-7.html">7. Revistes i Publicacions</a>
+    </div>
+  </div>
+            
+</div>
+    
+     
+        
+    </header>
+
+    <div class="search">
+        <label for="searchinput">Buscador de recursos </label>
+        <input type="text" name="realtimesearch" id="searchinput"> Guia Temàtica d'Estudis Literaris
+    </div>
+
+
+    <div class="results">
+        <div data-search="Europeana">
+            <h3>Europeana</h3>
+            <p>This is small paragraph about something.</p>
+        </div>
+        <div data-search="javascript">
+            <h3>javascript</h3>
+            <p>This is small paragraph about something.</p>
+        </div>
+        <div data-search="C++">
+            <h3>C++</h3>
+            <p>This is small paragraph about something.</p>
+        </div>
+        <div data-search="C#">
+            <h3>C#</h3>
+            <p>This is small paragraph about something.</p>
+        </div>
+        <div data-search="python">
+            <h3>python</h3>
+            <p>This is small paragraph about something.</p>
+        </div>
+      <div data-search="HTML">
+            <h3>HTML</h3>
+            <p>This is small paragraph about something.</p>
+        </div>
+      <div data-search="CSS">
+            <h3>CSS</h3>
+            <p>This is small paragraph about something.</p>
+        </div>
+    </div>
+
+    <style id="style-here"></style>
+    
+    <script>
+var search = window.document.getElementById('searchinput'),
+        styler = window.document.getElementById('style-here');
+        search.onkeyup = function (ev) {
+            styler.innerHTML = 'div[data-search*="' + search.value + '" i] {display: block}';
+        };
+    
+    </script>
+</body>
+</html>
+
+
+
